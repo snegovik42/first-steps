@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Школьный журнал</title>
+  <style>
+    /* Оформляем таблицу для лучшего восприятия */
+    table {
+      width: 100%; /* Чтобы таблица занимала всю ширину экрана */
+      border-collapse: collapse; /* Объединяем границы, чтобы они не дублировались */
+    }
+
+    th, td {
+      border: 1px solid black; /* Рамки для ячеек таблицы */
+      padding: 8px; /* Отступы внутри ячеек */
+      text-align: center; /* Выравнивание текста по центру */
+    }
+
+    th {
+      background-color: lightblue; /* Фон для заголовков */
+    }
+
+    tfoot {
+      background-color: lightgray; /* Цвет фона для итоговых строк */
+    }
+  </style>
+</head>
+<body>
+  <!-- Тут начинается наша крутая таблица для школьного журнала -->
+  <table>
+    <thead>
+      <tr>
+        <th>Имя ученика</th>
+        <th>Математика</th>
+        <th>Физика</th>
+        <th>Литература</th>
+        <th>Средний балл</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Алексей</td>
+        <td>5</td>
+        <td>4</td>
+        <td>5</td>
+        <td>4.67</td> <!-- Средний балл Алексей -->
+      </tr>
+      <tr>
+        <td>Марк</td>
+        <td>3</td> <!-- Математика Марка -->
+        <td>4</td> <!-- Физика Марка -->
+        <td>3</td> <!-- Литература Марка -->
+        <td>3.33</td> <!-- Средний балл Марка, по физике он дотянул до четвёрки -->
+      </tr>
+      <tr>
+        <td>Дарья</td>
+        <td>4</td>
+        <td>5</td>
+        <td>5</td>
+        <td>4.67</td> <!-- Средний балл Дарьи -->
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Общий средний балл</td>
+        <td>4.22</td> <!-- Тут считается средний балл всех учеников -->
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
